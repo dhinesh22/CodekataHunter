@@ -12,7 +12,10 @@ for i in range(0, a):
         elif first == second:
             dup.append(first)
             j = a+1
-dup.sort()
-dup = {x for x in dup}
-for y in dup:
-    print(y, end=" ")
+if len(dup) != 0:
+    dup.sort()
+    dup = {x for x in dup}
+    for y in dup:
+        print(y, end=" ")
+else:
+    print('unique')
